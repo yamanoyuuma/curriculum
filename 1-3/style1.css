@@ -3,18 +3,20 @@
     padding: 0;
 }
 
+.wrapper {
+    width: 400px;
+}
+
+body {
+    width: 100%;
+}
+
 .header {
     background: #141f40;
-    width: 400px;
+    width: 100%;
     height: 100px;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
- }
- 
 
 .left {
     background: #80bfa8;
@@ -32,12 +34,23 @@
 
 .footer {
     background: #d98d30;
-    width: 400px;
+    width: 100%;
     height: 100px;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+ }
+ 
 @media screen and (max-width: 767px) {
 
+    .wrapper {
+        width: 250px;
+    }
     .header {
         width: 250px;
     }
@@ -51,6 +64,9 @@
 
 @media screen and (max-width: 479px) {
     
+    .wrapper {
+        width: 150px;
+    }
     body {
         width: 150px;
     }
@@ -59,14 +75,15 @@
     }
     .rigth {
         width: 150px; 
-        float: none;
     }
     .left {
         width: 150px;
-        float: none;
     }
     .footer {
         width: 150px;
+    }
+    .clearfix {
+        float: none;
     }
     .clearfix::after {
         content: "";
