@@ -73,8 +73,8 @@ body {
     .header {
         width: 150px;
     }
-    .rigth {
-        width: 150px; 
+    .right {
+        width: 150px !important; 
     }
     .left {
         width: 150px;
