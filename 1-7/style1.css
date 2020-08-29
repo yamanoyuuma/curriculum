@@ -40,7 +40,6 @@
     background: #d98d30;
     height: 100px;
 }
-
 .clearfix::after {
     content: "";
     display: block;
