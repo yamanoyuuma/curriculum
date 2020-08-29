@@ -1,0 +1,57 @@
+.wrapper {
+    width: 350px;
+    height: 350px;
+}
+.left {
+    width: 150px;
+    float: left;
+}
+.left-top {
+    background: #FFFF66;
+    height: 100px;
+}
+.left-main {
+    background: #FF3333;
+    height: 150px;
+}
+.left-bottom {
+    background: #FF9966;
+    height: 100px;
+}
+.right {
+    float: right;
+}
+.right-top {
+    background: #666666;
+    height: 100px;
+    width: 200px;
+}
+.content-main-left {
+    background: #3366FF;
+    width: 100px;
+    height: 150px;
+    float: left;
+}
+.content-main-right {
+    background: #669933;
+    width: 100px;
+    height: 150px;
+    float: right;
+}
+.content-bottom-left {
+    background: #FFFFCC;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.content-bottom-right {
+    background: #330066;
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+ }
