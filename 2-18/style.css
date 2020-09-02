@@ -1,0 +1,15 @@
+body {
+    background: gray;
+    text-align: center;
+    font-family: serif;
+    margin-left: 0;
+    margin-right: 0;
+    color: #fff;
+}
+
+h1 {
+    padding-top: 100px;
+    font-size: 25px;
+    border-bottom: solid 2px #FFF;
+}
+
