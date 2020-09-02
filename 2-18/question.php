@@ -19,6 +19,7 @@ shuffle($lang);
 shuffle($command);
 
 ?>
+
 <p style="margin-top: 70px;">お疲れ様です<!--POST通信で送られてきた名前を出力--><?php echo $my_name; ?>さん</p>
 <!--フォームの作成 通信はPOST通信で-->
 <form  action="answer.php" method="POST" >
@@ -48,7 +49,6 @@ foreach( $command as $value ){ ?>
     <?php echo "<br>";?>
 
 <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
- 
     <input type="hidden" name="my_name" value="<?php echo $my_name; ?>">
     <input type="hidden" name="port_a" value="<?php echo $port_a; ?>">
     <input type="hidden" name="lang_a" value="<?php echo $lang_a; ?>">
