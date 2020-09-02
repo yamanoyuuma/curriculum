@@ -27,7 +27,7 @@ shuffle($command);
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
 foreach( $port as $value ){ ?>
-    <input type="radio" name="port" value=" <?php echo $value; ?> " style="margin: 0;">
+    <input type="radio" name="port" value="<?php echo $value;?>" style="margin: 0;">
     <?php echo $value;?>
     <?php } ?>
    
@@ -35,7 +35,7 @@ foreach( $port as $value ){ ?>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
 foreach( $lang as $value ){ ?>
-    <input type="radio" name="lang" value=" <?php echo $value; ?> " style="margin: 0;">
+    <input type="radio" name="lang" value="<?php echo $value;?>" style="margin: 0;">
     <?php echo $value;?>
     <?php } ?>
 
@@ -43,7 +43,7 @@ foreach( $lang as $value ){ ?>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
 foreach( $command as $value ){ ?>
-    <input type="radio" name="command" value=" <?php echo $value; ?> " style="margin: 0;">
+    <input type="radio" name="command" value="<?php echo $value;?>" style="margin: 0;">
     <?php echo $value;?>
     <?php } ?>
     <?php echo "<br>";?>
