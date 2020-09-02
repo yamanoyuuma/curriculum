@@ -21,7 +21,7 @@ shuffle($command);
 ?>
 <p style="margin-top: 70px;">お疲れ様です<!--POST通信で送られてきた名前を出力--><?php echo $my_name; ?>さん</p>
 <!--フォームの作成 通信はPOST通信で-->
-<form  method="post" >
+<form  action="answer.php" method="POST" >
 <h2>①ネットワークのポート番号は何番？</h2>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
@@ -29,7 +29,7 @@ foreach( $port as $value ){ ?>
     <input type="radio" name="port" value=" <?php echo $value; ?> " style="margin: 0;">
     <?php echo $value;?>
     <?php } ?>
-
+   
 <h2>②Webページを作成するための言語は？</h2>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
@@ -45,11 +45,10 @@ foreach( $command as $value ){ ?>
     <input type="radio" name="command" value=" <?php echo $value; ?> " style="margin: 0;">
     <?php echo $value;?>
     <?php } ?>
-</form>
+    <?php echo "<br>";?>
 
 <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
-
-<form action="answer.php" method="POST">
+ 
     <input type="hidden" name="my_name" value="<?php echo $my_name; ?>">
     <input type="hidden" name="port_a" value="<?php echo $port_a; ?>">
     <input type="hidden" name="lang_a" value="<?php echo $lang_a; ?>">
